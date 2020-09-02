@@ -22,7 +22,7 @@ We need to alter a setting in our cloud database in order to import the dataset 
 
 ##### Import data
 
-We are going to use a sample schema given to use by MySQL.
+We are going to use a sample schema given to us by MySQL.
 
 1. Download the zip directory and extract it
   * https://dev.mysql.com/doc/sakila/en/sakila-installation.html
@@ -69,10 +69,13 @@ We are going to use a sample schema given to use by MySQL.
 ##### ER Diagram Diagnosis 
 
 1. What is the relationship between the "actor" and "film_actor" tables?
+one-to-many
 
 2. What does the blue diamond next to the "last_update" column on the "inventory" table represent?
+not-null simple attribute
 
 3. How many foreign keys does the "payments" table have? How can you tell?
+zero. no fk icons, no links to other tables where its records indicate a primary key in another location.
 
 ##### ER Diagram upload
 
